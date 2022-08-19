@@ -1,0 +1,64 @@
+#primeroLista{
+    color: blue;
+}
+
+.spanRojo{
+    color: red;
+}
+
+span{
+    color:pink;
+}
+
+li{
+    color: green;
+}
+
+.seccion{
+    font-weight: bold;
+}
+
+div.seccion{
+    background-color: aqua;
+}
+
+p, ul{
+   /* background-color: brown;
+   */
+}
+
+div > span{
+    color: green;
+    font-size: 20px;
+}
+
+#primeroLista ~ span {
+    color: black
+}
+
+p::after{
+    content: "--->> Texto Despues";
+    color: blue;
+}
+
+P::before{
+    content: "Texto antes <--";
+    color: red;
+}
+
+li:hover{
+    background-color: yellow;
+}
+
+input:focus{
+ background-color: green;   
+}
+
+
+.checked:checked{
+margin: 50px;
+}
+
+
+
+
