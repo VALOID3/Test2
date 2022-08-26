@@ -11,7 +11,7 @@
 
 <body>
 
-
+<header>
     <h1> Titulo 1 <b> web </b></h1>
 <nav>
     <ul>
@@ -25,12 +25,19 @@
             </li>
 
             <li>
+                <a href="#contactame"> Contact me</a>
+            </li>
+
+            <li>
                 <a href="Profile.html"> Next Page - Brandon</a>
             </li>
         </ul>
     </ul>
 </nav>
+</header>
     <hr>
+    <main>
+        <article>
 <section id="home">
     <h2> Titulo 2 </h2>
     <h3> Titulo 3 </h3>
@@ -70,7 +77,10 @@
         </li>
     </ol>
 </section>
+
+</article>
     <hr>
+    <article>
     <section>
     <table>
         <tr>
@@ -107,7 +117,10 @@
         Calle, colonio, Pais
     </address>
 </section>
+
+</article>
     <hr>
+    <article>
     <section>
         <dl>
             <dt> Polo Norte </li>
@@ -122,10 +135,118 @@
             </figcaption>
         </figure>
     </section>
+</article>
+
+<article>
+    <section id="contactame">
+        <h1> Contact me </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate ipsam aspernatur veritatis iure fugiat odit laboriosam consequatur velit temporibus eum, minus itaque vero maiores praesentium, quia, facere reiciendis voluptas! </p>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend> Datos personales </legend>
+       <p>
+        <label for="nombre">Nombre(s): </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Brandon" autocomplete="on" required >
+</p>
+<p>
+        <label for="apellido">Apellidos(s): </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ejemplo: Gonzalez" autocomplete="on" required >
+        </p>
+
+        <p>
+            <label for="contrasenia">Contraseña: </label>
+            <input type="password" name="contrasenia" id="contrasenia" required >
+            </p>
+
+        <p>
+            <label for="phone">Telefono: </label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="off" required >
+            </p>
+
+            <p>
+                <label for="decada">Decada Favorita: </label>
+                <input type="number" min="1960" max="2020" step="10" name="decada" id="decada" value="1960" autocomplete="off" required >
+                </p>
+
+                <p>
+                    <label for="decada">Cafe favorito: </label>
+                    <select name="caffe" id="caffe" >
+                        <optgroup label="Cafes">
+<option value="regularCoffie" >Regular</option>
+<option value="icedCoffie"> Iced Coffee</option>
+</optgroup>
+<optgroup label="Drinks">
+<option value="lCoffie" > Latte </option>
+<option value="cCoffie" selected> Cappuccino</option>
+<option value="aCoffie">Americano</option>
+</optgroup>
+                    </select>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend> ¿Tienes Mascotas?</legend>
+                <p>
+
+                    <label for="mascotaSI"> si </label>
+                    <input type="radio" name="mascota" id="mascotaSI" value="si"  >
+                    </p>
+                    <p>
+
+                        <label for="mascotaNo"> no </label>
+                        <input type="radio" name="mascota" id="mascotaNo" value="no"  >
+                        </p>
+
+                        <p>
+
+                            <label for="mascotaNoSe"> no se </label>
+                            <input type="radio" name="mascota" id="mascotaNoSe" value="nose"  >
+                            </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend> ¿Que te gusta comer?</legend>
+                    <p>
+    
+                        <label for="Pizza"> Pizza </label>
+                        <input type="checkbox" name="comida" id="Pizza" value="pizza"  >
+                        </p>
+                        <p>
+    
+                            <label for="tacos"> tacos </label>
+                            <input type="checkbox" name="comida" id="tacos" value="tacos"  >
+                            </p>
+    
+                            <p>
+    
+                                <label for="hamburguesa"> hamburguesa </label>
+                                <input type="checkbox" name="comida" id="hamburguesa" value="hamburguesa"  >
+                                </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> ¿Quieres mandar un mensaje?</legend>
+                       <label for="mensaje"> Tu mensaje: </label> <br>
+                       <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui...." cols="30"
+                       rows="10">
+
+                       </textarea>
+                        </fieldset>
+<br>
+<button type="submit"> Enviar formulario</button>
+<button type="reset"> Limpiar formulario</button>
+<br>
+<br>
+      </form>
+    </section>
+</article>
+</main>
+<footer>
 
     &lt; &lt; &copy; <a href="Profile.html"> Brandon Gonzalez </a> &gt; &gt; 
+
+</footer>
 </body>
 
 </html>
 
-w3schools
